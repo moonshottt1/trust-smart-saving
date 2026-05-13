@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trustsmartsaving.com/sitemap.xml
