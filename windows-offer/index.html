@@ -530,7 +530,7 @@
     <!-- ===== STEP 0: HERO + ZIP ===== -->
     <section class="step active" id="step-0" data-progress="0">
       <div class="hero">
-        <h1>Find <strong>Local</strong> Home Window <br>Prices By ZIP Code</h1>
+        <h1>2026 Price Drop. <br>Get New Windows in <span class="current-month">May</span></h1>
 
         <div class="zip-card">
           <div class="zip-card-head">
@@ -752,6 +752,14 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function setCurrentMonth() {
+      var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var monthName = months[new Date().getMonth()];
+      document.querySelectorAll('.current-month').forEach(function (el) {
+        el.textContent = monthName;
+      });
+    })();
 
     var steps = document.querySelectorAll('.step');
     var current = 0;
